@@ -22,6 +22,8 @@ namespace BindUWP
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        public TestViewModel ViewModel { get; set; } = new TestViewModel();
+
         public MainPage()
         {
             this.InitializeComponent();

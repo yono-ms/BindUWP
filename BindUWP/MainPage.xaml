@@ -9,6 +9,10 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <StackPanel>
+            <TextBlock Text="{x:Bind Path=ViewModel.Title, Mode=OneWay}"/>
+            <TextBlock Text="{x:Bind ViewModel.Description}"/>
+            <Button x:Name="ButtonCommit" Content="{x:Bind Path=ViewModel.NextButtonText, Mode=OneWay}"/>
+        </StackPanel>
     </Grid>
 </Page>
