@@ -13,6 +13,9 @@
             <TextBlock Text="{x:Bind Path=ViewModel.Title, Mode=OneWay}"/>
             <TextBlock Text="{x:Bind ViewModel.Description}"/>
             <Button x:Name="ButtonCommit" Content="{x:Bind Path=ViewModel.NextButtonText, Mode=OneWay}"/>
+            <TextBox Text="{x:Bind Path=ViewModel.Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Header="{x:Bind Path=ViewModel.NameTitle}"/>
+            <TextBlock Text="{x:Bind Path=ViewModel.NameError, Mode=OneWay}"/>
+            <Button Content="{x:Bind ViewModel.NextButtonText}" IsEnabled="{x:Bind Path=ViewModel.CanCommit, Mode=OneWay}" Click="{x:Bind Path=ViewModel.Commit}"/>
         </StackPanel>
     </Grid>
 </Page>
