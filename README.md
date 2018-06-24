@@ -33,3 +33,6 @@ ICommandと違いCanCommitはViewModelの中で
 Anniversaryだとマニュアル通りにプレースホルダー値が
 表示される。新しいバージョンのバグらしい。
 
+Fall Creators Update(10.0.16299)以降を
+ターゲットにすると表示されなくなる。
+.NetStandard1.5以降では使えないということになってしまう。
